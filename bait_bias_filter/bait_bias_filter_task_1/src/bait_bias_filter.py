@@ -87,7 +87,7 @@ def main():
     name=sys.argv[4]
 
     if len(sys.argv)>5:
-        min_pval=sys.argv[5]
+        min_pval=float(sys.argv[5])
     else:
         min_pval=0.1
     
