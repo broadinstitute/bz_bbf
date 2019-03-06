@@ -1,0 +1,10 @@
+{
+  "bait_bias_filter.bait_bias_filter_task_1.MAF_file": "File",
+  "bait_bias_filter.bait_bias_filter_task_1.alt_base": "String",
+  "bait_bias_filter.bait_bias_filter_task_1.local_disk_gb": "Int? (optional)",
+  "bait_bias_filter.bait_bias_filter_task_1.min_pval1": "Float",
+  "bait_bias_filter.bait_bias_filter_task_1.name": "String",
+  "bait_bias_filter.bait_bias_filter_task_1.num_preemptions": "Int? (optional)",
+  "bait_bias_filter.bait_bias_filter_task_1.ram_gb": "Float? (optional)",
+  "bait_bias_filter.bait_bias_filter_task_1.ref_base": "String"
+}
