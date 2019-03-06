@@ -67,11 +67,10 @@ def multi_sample_clear_bait_bias(MAF_file,ref_base,alt_base,name,min_pval):
         removed[sample]=cnt
         
     ncut = len(MAF)-len(result_MAF)
-    result_MAF.to_csv(path_or_buf=name+"BaitBiasfilt_"+ref_base+"to"+alt_base+".maf",sep='\t', index=None)
-    f1=fopen(name+"BaitBiasfilt_"+ref_base+"to"+alt_base+"_ncut.txt",'w')
-    f1.write(ncut)
+    f1=open(name+".BaitBiasfilt_"+ref_base+"to"+alt_base+"_ncut.txt",'w')
+    f1.write(str(ncut))
     f1.close()
-    result_MAF.to_csv(path_or_buf=name+"BaitBiasfilt_"+ref_base+"to"+alt_base+".maf",sep='\t', index=None)
+    result_MAF.to_csv(path_or_buf=name+".BaitBiasfilt_"+ref_base+"to"+alt_base+".maf",sep='\t', index=None)
     
     return(0)
 
