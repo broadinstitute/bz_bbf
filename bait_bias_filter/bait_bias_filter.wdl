@@ -23,7 +23,7 @@ task bait_bias_filter_task_1 {
 
     output {
         File FilteredMaf = "${name}.BaitBiasfilt_${ref_base}to${alt_base}.maf"
-        File FilteredCount = "${name}.BaitBiasfilt_${ref_base}to${alt_base}_ncut.txt"
+        String FilteredCount = read_string("${name}.BaitBiasfilt_${ref_base}to${alt_base}_ncut.txt")
     }
 
     runtime {
