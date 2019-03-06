@@ -19,6 +19,7 @@ task bait_bias_filter_task_1 {
     command {
         set -x
         python /opt/src/bait_bias_filter.py ${MAF_file} ${ref_base} ${alt_base} ${name} ${min_pval}
+        ls -latr
     }
 
     output {
